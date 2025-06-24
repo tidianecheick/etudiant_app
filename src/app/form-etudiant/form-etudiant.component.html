@@ -1,0 +1,32 @@
+<form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()" class="mat-form-container">
+  <div class="mat-form-row">
+    <mat-form-field appearance="outline" class="mat-form-field-custom">
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="nom" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="mat-form-field-custom">
+      <mat-label>Prénom</mat-label>
+      <input matInput formControlName="prenom" />
+    </mat-form-field>
+  </div>
+
+  <div class="mat-form-row">
+    <mat-form-field appearance="outline" class="mat-form-field-custom">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="mat-form-field-custom">
+      <mat-label>Matricule</mat-label>
+      <input matInput formControlName="matricule" />
+    </mat-form-field>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit" class="submit-button">
+    <span class="material-icons">
+save
+</span>
+    Enregistrer
+  </button>
+</form>
