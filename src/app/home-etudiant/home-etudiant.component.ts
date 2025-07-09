@@ -6,11 +6,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { RouterLink, RouterModule } from '@angular/router';
-
-
-
-
-
+import { FormEtudiantComponent } from '../form-etudiant/form-etudiant.component';
 
 @Component({
   selector: 'app-home-etudiant',
@@ -22,7 +18,7 @@ import { RouterLink, RouterModule } from '@angular/router';
     MatSidenavModule,
   MatListModule,
   RouterLink,
-  RouterModule
+  RouterModule,
 ],
   templateUrl: './home-etudiant.component.html',
   styleUrl: './home-etudiant.component.css'

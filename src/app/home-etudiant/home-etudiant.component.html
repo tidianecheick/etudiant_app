@@ -3,8 +3,8 @@
   <mat-icon>menu</mat-icon>
   </button>
   <span style="flex: auto;"></span>
-  <button mat-button routerLink="/form-etudiant" >Ajouter Etudiant</button>
-  <button mat-button routerLink="/list-etudiant">Liste Etudiant</button>
+  <button mat-button routerLink ="/form-etudiant" >Ajouter Etudiant</button>
+  <button mat-button routerLink ="/list-etudiant">Liste Etudiant</button>
   <button mat-button [matMenuTriggerFor]="importMenu">
     <mat-icon iconPositionEnd>keyboard_arrow_down</mat-icon>
     Import
@@ -15,27 +15,7 @@
   </mat-menu>
   <button  mat-raised-button color="accent" >Logout</button>
 </mat-toolbar>
+<div>
+<router-outlet></router-outlet>
+</div>
 
-<mat-drawer-container opened="true" mode="side" position="start">
-  <mat-drawer >
-    <mat-list>
-       <mat-list-item>
-      <button mat-button>
-        <mat-icon>dashboard</mat-icon>
-        Dashboard
-      </button>
-      </mat-list-item>
-      <mat-list-item>
-      <button mat-button>Students</button>
-      </mat-list-item>
-      <mat-list-item>
-      <button mat-button>Paments</button>
-      </mat-list-item>
-    </mat-list>
-    <mat-drawer-content>
-      <div style="min-height: 600px">
-      <router-outlet></router-outlet>
-      </div>
-    </mat-drawer-content>
-  </mat-drawer>
-</mat-drawer-container>
